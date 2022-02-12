@@ -1,0 +1,43 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.suptitle-left {
+  font-size: 22px;
+  line-height: 32px;
+
+  text-align: right;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  display: inline-block;
+  opacity: 0.5;
+  padding-left: 103px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+  }
+}
+.slider-arrows {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 4;
+}
+.slider-arrows__left {
+	right: 125px;
+}
+.slider-arrows__right {
+}

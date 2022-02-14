@@ -97,11 +97,11 @@
     display: block;
   }
 }
-.header__search{
+.header__search {
   padding-top: 15px;
   padding-bottom: 35px;
 }
-.header__location{
+.header__location {
   display: inline-block;
   font-weight: 300;
   font-size: 12px;
@@ -110,14 +110,39 @@
   position: relative;
   padding-left: 19px;
 
-  &::before{
-    content:'';
+  &::before {
+    content: "";
     position: absolute;
     width: 11px;
     height: 13px;
     background-image: url(../img/marker.svg);
     top: 0;
     left: 0;
+  }
+}
+.header__map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.header__arrows {
+  position: absolute;
+  bottom: 30px;
+  left: 210px;
+  z-index: 3;
+}
+.line-animation {
+  animation: animdash 5s 6s;
+  animation-fill-mode: forwards;
+  stroke-dashoffset: 600;
+
+  stroke-dasharray: 600;
+}
+
+@keyframes animdash {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 

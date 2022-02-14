@@ -23,7 +23,6 @@
   bottom: 116px;
   text-align: right;
   color: #fff;
-  text-transform: uppercase;
 }
 .slider-item__info-suptitle {
   margin-bottom: 5px;
@@ -57,7 +56,6 @@
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
-  text-transform: uppercase;
   color: #ffffff;
   opacity: 0.07;
   max-width: 467px;
@@ -78,6 +76,7 @@
       letter-spacing: 3px;
       padding-top: 6px;
       margin-bottom: 20px;
+      text-transform: capitalize;
     }
   }
 }
@@ -109,6 +108,7 @@
   font-weight: 300;
   position: relative;
   padding-left: 19px;
+  text-transform: capitalize;
 
   &::before {
     content: "";
@@ -145,5 +145,88 @@
     stroke-dashoffset: 0;
   }
 }
+.title {
+  span {
+    font-weight: 800;
+    font-size: 200px;
+    color: rgba(#fff, 0.02);
+    position: relative;
+    transform: translate(-50px);
+    display: inline-block;
+  }
+  h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 1px;
+      background-color: $green;
+    }
+  }
+}
+.serf {
+  padding: 160px 0 210px;
+  background-image: url(../img/serf-bg.svg);
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.serf__subtitle {
+  text-align: right;
+}
+.serf-box {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__inner {
+    min-height: 750px;
+    background: rgba(#1c2121, 0.85);
+    position: relative;
+  }
+}
+.serf-slider {
+  padding-top: 110px;
+  .slider-arrows {
+    top: 50px;
+    opacity: 0.25;
+  }
+}
+.serf-box__inner-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  padding: 72px 0 0 40px;
+  width: 140px;
+}
+.serf-box__inner-location {
+  font-size: 18px;
+  line-height: 22px;
+  transform: rotate(-90deg);
+  letter-spacing: 8px;
+  position: absolute;
+  left: 40px;
+  bottom: 80px;
+  height: 0;
+  width: 0;
+  white-space: nowrap;
+  span {
+    font-weight: 100;
+  }
+}
+.serf-bow_inner-btn {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
 
+}
 @import "media";

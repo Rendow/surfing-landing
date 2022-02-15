@@ -1,10 +1,9 @@
 @import "vars";
-html{
+html {
   box-sizing: border-box;
 }
 *,
-*::after
-*::before{
+*::after *::before {
   box-sizing: inherit;
 }
 body {
@@ -21,12 +20,12 @@ a {
   color: #ffffff;
 }
 ul,
-li{
+li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.container{
+.container {
   max-width: 1920px;
   margin: o auto;
 }
@@ -36,7 +35,6 @@ li{
 
   text-align: right;
   letter-spacing: 7.33333px;
-
 
   display: inline-block;
   opacity: 0.5;
@@ -63,14 +61,14 @@ li{
 .slider-arrows__left {
   right: 125px;
 }
-.slider-dots {
+.slider-dotshead {
   position: absolute;
   right: 50px;
   bottom: 36px;
   max-width: 920px;
   width: 100%;
-  .slick-current{
-    .dots-box{
+  .slick-current {
+    .dots-box {
       border-top: 4px solid $green;
     }
   }
@@ -95,31 +93,30 @@ li{
   }
 }
 
-.suptitle{
+.suptitle {
   display: inline-block;
-text-align: right;
-  &__head{
+  text-align: right;
+  &__head {
     font-weight: 800;
     font-size: 40px;
     padding-right: 10px;
-    span{
+    span {
       font-weight: 300;
     }
   }
-
 }
-.btn{
+.btn {
   font-weight: 800;
   font-size: 40px;
   line-height: 36px;
-  span{
+  span {
     padding: 17px 57px 15px 17px;
     background-color: $green;
     display: inline-block;
     margin-left: 19px;
     position: relative;
-    &::before{
-      content:'';
+    &::before {
+      content: "";
       position: absolute;
       width: 20px;
       height: 1px;
@@ -127,8 +124,8 @@ text-align: right;
       top: 50%;
       left: -10px;
     }
-    &::after{
-      content:'';
+    &::after {
+      content: "";
       position: absolute;
       width: 25px;
       height: 21px;

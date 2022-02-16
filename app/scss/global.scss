@@ -51,6 +51,28 @@ li {
     top: 50%;
   }
 }
+.headline-right{
+  font-size: 22px;
+  line-height: 32px;
+
+  text-align: right;
+  letter-spacing: 7.33333px;
+
+  display: inline-block;
+  opacity: 0.5;
+  padding-right: 103px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    right: 0;
+    top: 50%;
+  }
+}
 .slider-arrows {
   position: absolute;
   top: 40px;
@@ -93,7 +115,7 @@ li {
   }
 }
 
-.suptitle {
+.subtitle {
   display: inline-block;
   text-align: right;
   &__head {
@@ -105,12 +127,23 @@ li {
     }
   }
 }
+.descr{
+  display: inline-block;
+  padding-left: 35px;
+  &__head {
+    font-weight: 800;
+    font-size: 40px;
+    span {
+      font-weight: 300;
+    }
+  }
+}
 .btn {
   font-weight: 800;
   font-size: 40px;
   line-height: 36px;
   span {
-    padding: 17px 57px 15px 17px;
+    padding: 17px 52px 15px 17px;
     background-color: $green;
     display: inline-block;
     margin-left: 19px;
@@ -135,4 +168,11 @@ li {
       transform: translateY(-50%);
     }
   }
+}
+.surf{
+  padding: 160px 0 120px;
+}
+
+.travel{
+  padding-bottom: 165px;
 }

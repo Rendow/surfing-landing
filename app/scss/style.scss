@@ -160,7 +160,7 @@
     font-size: 80px;
     position: absolute;
     top: 0;
-    right: -5px;
+    right: 113px;
     &::after {
       content: "";
       position: absolute;
@@ -409,16 +409,19 @@
   }
 }
 
-.travel {
+.holder {
   background-image: url(../img/travel-bg.png);
-  background-position: bottom right;
+  background-position: bottom -93px right;
   background-repeat: no-repeat;
-  .slider-arrows{
-    top: 230px;
+  &.sleep {
+    background-image: url(../img/frangipani.png);
+  }
+  .slider-arrows {
+    top: 107px;
     opacity: 0.5;
   }
 }
-.travel-slider {
+.holder-slider {
   background-repeat: no-repeat;
   background-position: top right;
   &__head {
@@ -433,37 +436,49 @@
     background-position: right center;
     min-width: 320px;
     margin-top: -230px;
+    background-size: contain;
 
-   
-    .descr__head{
+    .descr__head {
       position: relative;
-      padding-right: 78px;
+      padding-right: 48px;
+      &.descr__head-sleep {
+        padding-right: 215px;
+      }
       img {
+        position: absolute;
+        right: -49px;
+        top: 0;
+      }
+      .holder__star-list {
         position: absolute;
         right: 0;
         top: 0;
+
+       
+        img {
+          position: static;
+        }
       }
     }
   }
   &__subtitle {
     padding-right: 80px;
-   padding-top: 132px;
     text-align: right;
   }
   &__btn {
     text-align: center;
   }
 }
-.travel-slider__info {
+.holder-slider__info {
   display: flex;
   justify-content: space-around;
 }
-.travel-slider__info-item {
+.holder-slider__info-item {
   min-height: 200px;
   margin-bottom: 66px;
   position: relative;
 }
-.travel-slider__info-subtitle {
+.holder-slider__info-subtitle {
   position: absolute;
   font-size: 18px;
   line-height: 22px;
@@ -476,14 +491,13 @@
   width: 200px;
   height: 0;
   text-align: right;
-
 }
-.travel-slider__info-title {
+.holder-slider__info-title {
   font-weight: 800;
   font-size: 40px;
   line-height: 36px;
   position: relative;
-  span {
+  .holder-picing__span {
     font-size: 14px;
     line-height: 36px;
     font-weight: 400;

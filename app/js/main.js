@@ -31,7 +31,7 @@ $(function () {
     asNavFor: ".surf-slider",
     focusOnSelect:true,
   })
-  $('.holder__slider').slick({
+  $('.holder__slider, .shop__slider').slick({
     infinite: true,
     fade: true,
     prevArrow:
@@ -73,10 +73,21 @@ $(function () {
 
   });
 
-  $('.quantity-button').on('click',function(){
-    const summ = $('.nights').val() * $('.summ').data('nights') +($('.guests').val() - 1) * $('.summ').data('guests');
-    $('.summ').html('$' + summ)
-  })
-  const summ = $('.nights').val() * $('.summ').data('nights') +($('.guests').val() - 1) * $('.summ').data('guests');
-  $('.summ').html('$' + summ)
+  $('.quantity-button').on('click', function(){
+    const parents = $(this).parents('.holder-slider__info');
+    const summ = $('.summ', parents).data('nights') * $('.nights', parents).val() + $('.summ', parents).data('guests') * $('.guests', parents).val();
+     $('.summ', parents).html('$' + summ);
+    });
+    
+    $('.quantity').each(function() {
+      const parents = $(this).parents('.holder-slider__info');
+      const summ = $('.summ', parents).data('nights') * $('.nights', parents).val() + $('.summ', parents).data('guests') * $('.guests', parents).val();
+     $('.summ', parents).html('$' + summ);
+    });
+
+    $('.surfboard-box__circle').on('click',function(){
+      $(this).toggleClass('active')
+    })
+
+    
 });

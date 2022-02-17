@@ -411,7 +411,7 @@
 
 .holder {
   background-image: url(../img/travel-bg.png);
-  background-position: bottom -93px right;
+  background-position: bottom 75px right;
   background-repeat: no-repeat;
   &.sleep {
     background-image: url(../img/frangipani.png);
@@ -454,7 +454,6 @@
         right: 0;
         top: 0;
 
-       
         img {
           position: static;
         }
@@ -509,5 +508,189 @@
     right: 62px;
     white-space: nowrap;
   }
+}
+
+.shop {
+  background-image: url(../img/shop-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  .slider-arrows{
+opacity: .25;
+  }
+}
+.shop__slider {
+  padding-left: 132px;
+}
+.descr__head-shop {
+  min-width: 340px;
+  margin-bottom: 47px;
+}
+.shop__slider-inner {
+  display: flex;
+}
+.shop__slider-info {
+  min-width: 480px;
+  margin-right: 40px;
+  width: 100%;
+  padding-top: 166px;
+}
+.shop__star-list {
+  margin-top: -10px;
+}
+.shop__slider-price {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  sup {
+    font-size: 18px;
+  }
+}
+.shop__slider-content {
+  padding-left: 170px;
+  display: flex;
+  align-items: flex-end;
+}
+.shop__extras-inner {
+  display: flex;
+}
+.shop__extras {
+  padding-left: 150px;
+}
+.shop__extras-title {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.shop__extras-box {
+  text-align: center;
+  margin-right: 57px;
+}
+.shop__extras-img {
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop__extras-name {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 8px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.shop__extras-price {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 40px;
+}
+.surfboard{
+  position: relative;
+}
+.surfboard-box{
+  position: absolute;
+}
+.surfboard__position-1{
+  right: 40px;
+  top: 215px;
+}
+.surfboard__position-2{
+  right: 218px;
+  top: 298px;
+}
+.surfboard__position-3{
+  bottom: 50px;
+  left: 52px;
+  .surfboard-box__content{
+    padding-left: 0;
+    padding-right: 104px;
+    left: -427px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+      top: 50%;
+      left: auto;
+      right: 59px;
+    }
+  }
+}
+.surfboard-box__circle{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  &.active{
+    .circle-row{
+      transform:translate(-50%,-50%) rotate(0deg);
+      transition: all  .1s;
+    }
+
+  }
+}
+.surfboard-box__circle.active +  .surfboard-box__content{
+  display: block;
+}
+.circle-row{
+  background-color: $green;
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  top: 10px;
+    left: 10px;
+    transform:translate(-50%,-50%) rotate(0deg);
+  & + .circle-row{
+    transition: all  .1s;
+    transform:translate(-50%,-50%) rotate(90deg);
+  }
+}
+.surfboard-box__content{
+  display: none;
+  position: absolute;
+  width: 359px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 104px;
+  top: -15px;
+  left: 40px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    top: 50%;
+    left: 0px;
+  }
+}
+.footer{
+  text-align: center;
+  padding: 285px 0 34px;
+  .btn{
+    span{
+      padding: 17px 17px 15px;
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
+.footer__copy{
+  padding-top: 27px;
+  font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+letter-spacing: 1.05px;
+
+opacity: 0.5;
 }
 @import "media";

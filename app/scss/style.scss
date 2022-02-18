@@ -447,7 +447,7 @@
 
 .holder {
   background-image: url(../img/travel-bg.png);
-  background-position: bottom 75px right;
+  background-position: bottom -108px right;
   background-repeat: no-repeat;
   &.sleep {
     background-image: url(../img/frangipani.png);
@@ -532,6 +532,8 @@
   font-size: 40px;
   line-height: 36px;
   position: relative;
+  width: 200px;
+
   .holder-picing__span {
     font-size: 14px;
     line-height: 36px;

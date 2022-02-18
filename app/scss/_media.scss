@@ -197,23 +197,15 @@
 }
 @media (max-width: 1150px) {
   .holder-slider__descr {
-    padding: 89px 0 58px;
+    padding: 160px 0 105px;
     margin-top: -423px;
     background-position: right -83px;
   }
-  // .title {
-  // 	h3 {
-  // 	  font-size: 80px;
-  // 	  right: 67px;
-  // 	  left: 77px;
-  // 	}
-  // 	span {
-  // 		font-size: 142px;
-  // 	}
-  //   }
+
   .surf,
   .holder {
     padding: 75px 0 50px;
+	background-position: bottom 137px right;
   }
   .holder-slider__info {
     flex-direction: column;
@@ -234,6 +226,17 @@
     right: 0;
     left: 3px;
   }
+  .quantity-button.quantity-down {
+    right: auto;
+  }
+  .quantity-button.quantity-up {
+    left: 25px;
+  }
+  .sleep .holder-slider__descr {
+    padding: 153px 0 105px;
+    margin-top: -423px;
+    background-position: right 30px;
+}
 }
 
 @media (max-width: 1102px) {
@@ -251,9 +254,9 @@
   .title span {
     font-size: 170px;
   }
-//   .holder .title span {
-//     font-size: 133px;
-//   }
+  .holder-slider__descr {
+    padding: 81px 0 58px;
+  }
 }
 @media (max-width: 640px) {
   .holder-slider__descr {
@@ -278,8 +281,11 @@
   }
   .holder {
     background-position: bottom 182px right;
-    background-size: 252px;
+	background-size: 139px;
   }
+  .holder.sleep {
+    background-size: 132px;
+}
 }
 @media (max-width: 460px) {
   .header__aside {
@@ -327,7 +333,7 @@
   }
   .holder .title {
     span {
-      font-size:95px;
+      font-size: 95px;
     }
     h3 {
       font-size: 70px;
@@ -335,8 +341,15 @@
   }
   .holder .title h3::after {
     right: -207px;
+  }
+  .surf-slider .slick-slide:nth-child(4n + 1) .surf-box {
+    margin-top: 0;
+  }
+  .holder-slider__descr .descr__head .holder__star-list {
+	position: static;
+    margin-left: -18px;
 }
-.surf-slider .slick-slide:nth-child(4n+1) .surf-box {
-     margin-top: 0;
+.holder-slider__descr .descr__head.descr__head-sleep {
+    padding-right: 0;
 }
 }

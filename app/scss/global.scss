@@ -139,7 +139,7 @@ li {
   }
 }
 .btn {
-  font-weight: 800;
+  font-weight: 800 !important;
   font-size: 40px;
   line-height: 36px;
   span {
@@ -148,6 +148,7 @@ li {
     display: inline-block;
     margin-left: 19px;
     position: relative;
+    font-weight: 800 !important;
     &::before {
       content: "";
       position: absolute;

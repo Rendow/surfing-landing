@@ -451,6 +451,7 @@
   background-repeat: no-repeat;
   &.sleep {
     background-image: url(../img/frangipani.png);
+      background-position: bottom 13px right;
   }
   .slider-arrows {
     top: 107px;
@@ -553,7 +554,7 @@
   background-repeat: no-repeat;
   background-position: right center;
   .slider-arrows {
-    opacity: 0.25;
+    opacity: 1;
   }
 }
 .shop__slider {
@@ -614,7 +615,7 @@
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 8px;
-  margin-bottom: 16px;
+  margin: 10px 0 16px 0;
   color: #ffffff;
   opacity: 0.5;
 }

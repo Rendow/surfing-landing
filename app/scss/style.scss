@@ -213,9 +213,6 @@
   text-align: right;
 }
 .surf-box {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   width: calc(100% + 40px) !important;
   &__inner {
@@ -229,6 +226,11 @@
         display: block;
       }
     }
+  }
+  &__wrapper{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 .surf-slider {
@@ -295,8 +297,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
+  
   .slick-list {
     min-height: 635px;
+    overflow: visible;
   }
   .slick-current {
     .slider-dots__content {
@@ -360,6 +364,7 @@
   height: 23px;
   background-color: $green;
   border-radius: 50%;
+  box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
 }
 .slider-dots__content {
   display: none;
@@ -477,8 +482,8 @@
       }
       img {
         position: absolute;
-        right: -49px;
-        top: 0;
+        right: -30px;
+        top: -6px;
       }
       .holder__star-list {
         position: absolute;

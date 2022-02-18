@@ -23,6 +23,26 @@ $(function () {
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="">',
       asNavFor: ".slider_map",
+      responsive: [
+        {
+          breakpoint: 1210,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,         
+          }
+        }
+      ]
   });
   $('.slider_map').slick({
     slidesToShow: 8,

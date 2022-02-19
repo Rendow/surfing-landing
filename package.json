@@ -1,12 +1,14 @@
 {
-  "name": "gulp-start",
+  "name": "surfing-landing",
   "version": "1.0.0",
   "description": "start gulp",
   "main": "index.js",
+  "homepage": "https://rendow.github.io./surfing-landing/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "author": "Vilde",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.7",
@@ -22,6 +24,8 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "slick-carousel": "^1.8.1"
+    "gh-pages": "^3.2.3",
+    "slick-carousel": "^1.8.1",
+    "wow.js": "^1.2.2"
   }
 }

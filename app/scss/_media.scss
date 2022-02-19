@@ -316,8 +316,8 @@
     left: 4px;
   }
   .surfboard__position-1 .surfboard-box__content {
-    left: -206px;
-    top: -3px;
+    left: -183px;
+    top: -41px
   }
   .surfboard__position-3 .surfboard-box__content {
     margin-left: 0;
@@ -433,5 +433,7 @@
   .holder-slider__descr .descr__head.descr__head-sleep {
     padding-right: 0;
   }
-
+  .holder-slider__subtitle , .holder-slider__subtitle {
+    padding-right: 20px;
+}
 }

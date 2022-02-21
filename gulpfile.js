@@ -88,5 +88,5 @@ gulp.task(
   gulp.parallel("css", "scss", "js", "browser-sync", "watch")
 );
 gulp.task("deploy", function () {
-  return gulp.src("./app/**/*").pipe(ghPages());
+  return gulp.src("./dist/**/*").pipe(ghPages());
 });
